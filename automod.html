@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+  	<head>
+    	<link rel="stylesheet" href="github-markdown-dark.css">
+    	<script
+      		src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous">
+        </script>
+        <script> 
+            $(function(){
+                $("#header").load("header.html"); 
+                $("#footer").load("footer.html"); 
+            });
+        </script> 
+    </head>
+
+    <body class="markdown-body">
+
+        <div id="header"></div>
+        <div style="text-align: center;">
+            <h1>Automod actions</h1>
+            <p>
+              <strong><u>Mass mentions in a message</u></strong><br/>
+              <small>time out - 5 minutes</small>
+            </p>
+            <p>
+              <strong><u>Emoji spam</u></strong><br/>
+              <small>time out - 60 seconds</small>
+            </p>
+            <p>
+              <strong><u>Invite links</u></strong><br/>
+              <small>time out - 1 week</small>
+            </p>
+            <p>
+              <a id="domains"><strong><u>Sending links</u></strong></a><br/>
+              <small>
+                Time out after 2 attempts - 1 hour<br/>
+                List of allowed domains below, if you believe a domain should be added <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDwpP-cFYz3DC1cZdY1JoKS4s_tBgQRFouZTneZ23ucq7ZaQ/viewform">fill out this form</a><br/>
+              </small>
+              <table style="margin-left: auto; margin-right: auto; table-layout: auto;">
+                <tr>
+                  <td>discord.com</td>
+                  <td>discordapp.com</td>
+                  <td>discordapp.net</td>
+                  <td>discordcdn.com</td>
+                </tr>
+                <tr>
+                  <td>reddit.com</td>
+                  <td>wikipedia.org</td>
+                  <td>tenor.com</td>
+                  <td>giphy.com</td>
+                </tr>
+                <tr>
+                  <td>amazon.com</td>
+                  <td>amazon.co.uk</td>
+                  <td>youtube.com</td>
+                  <td>youtu.be</td>
+                </tr>
+                <tr>
+                  <td>patreon.com</td>
+                  <td>medal.tv</td>
+                </tr>
+              </table>
+            </p>
+            <p>
+              <strong><u>Blacklisted words</u></strong><br/>
+              <small>time out - 1 hour<br/>
+              Repeated uses will result in a ban</small><br/>
+              <table style="margin-left: auto; margin-right: auto;">
+                <tr>
+                  <td>hitler</td>
+                  <td>nazi</td>
+                  <td>faggot</td>
+                  <td>ASCII art</td>
+                </tr>
+                <tr>
+                  <td>tranny</td>
+                  <td>nigga</td>
+                  <td>nigger</td>
+                  <td>rape</td>
+                </tr>
+                <tr>
+                  <td>retard</td>
+                  <td>shotacon</td>
+                  <td>lolicon</td>
+                  <td>tranny</td>
+                </tr>
+              </table>
+            </p>
+          </div>
+    </body>
+</html>
